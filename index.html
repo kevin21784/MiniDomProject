@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-700">
+    <div class="mt-14 mr-14 ml-14">
+        <div class="flex justify-between">
+            <div>
+                <input id="searchvalue" type="text" placeholder="Search for a country...">
+                <button id="search" class="bg-gray-400 p-1 rounded">search</button>
+            </div>
+            <div>
+                <!-- <button id="filter" class="rounded">Filter by Region</button> 
+                <div id="dropdown" class="hidden">
+                    <div><button id="africa" class="mr-5">Africa</button></div>
+                    <div><button id="europe" class="mr-5">Europe</button> </div>
+                    <div><button id="asia" class="mr-5">Asia</button></div>
+                    <div><button id="americas" class="mr-5">Americas</button></div>
+                    <div><button id="oceania" class="mr-5">Oceania</button></div>
+                </div> -->
+                <select id="sort">
+                    <option value="africa">Africa</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="oceania">Oceania</option>
+                    <option value="america">Americas</option>
+                </select>
+            </div>
+        </div> 
+        <div class="mt-16 pt-16 flex justify-center">
+            <div id="mainbody" class="grid grid-cols-3 gap-6">
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
