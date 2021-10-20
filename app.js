@@ -13,7 +13,7 @@ search.addEventListener("click", searchCountries)
 async function getAllCountries(){
     const countries = await fetch("https://restcountries.com/v3.1/all")
     const data = await countries.json()
-    const displayCountries = (anydata = data) =>{
+    const displayCountries = () =>{
         data.forEach(country => {
             const {name, population , region , continents , flags , capital} = country
             const Info = {
@@ -22,7 +22,7 @@ async function getAllCountries(){
             name: `${name.common}`,
             pic : `${flags.png}`,
             capital : `${capital}`,
-            continent : `${continents}`
+            continent : `${continents}`,
             }
             addToArray(Info)
         })
